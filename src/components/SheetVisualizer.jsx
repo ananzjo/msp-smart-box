@@ -127,7 +127,7 @@ function StandardLayout({ L, W, H, blueprint }) {
       </defs>
 
       {/* Background */}
-      <image href="/msp-logo.png" x={vbW*0.25} y={vbH*0.25} width={vbW*0.5} height={vbH*0.5}
+      <image href={`${import.meta.env.BASE_URL}msp-logo.png`} x={vbW*0.25} y={vbH*0.25} width={vbW*0.5} height={vbH*0.5}
         opacity="0.10" preserveAspectRatio="xMidYMid meet" />
       <rect width="100%" height="100%" fill="url(#grid-std)" />
 
@@ -375,7 +375,7 @@ function TelescopeLayout({ L, W, H, blueprint }) {
         <DimMarkers id={dimId} color={dimC} />
       </defs>
 
-      <image href="/msp-logo.png" x={vbW*0.25} y={vbH*0.25} width={vbW*0.5} height={vbH*0.5}
+      <image href={`${import.meta.env.BASE_URL}msp-logo.png`} x={vbW*0.25} y={vbH*0.25} width={vbW*0.5} height={vbH*0.5}
         opacity="0.09" preserveAspectRatio="xMidYMid meet" />
       <rect width="100%" height="100%" fill="url(#grid-tel)" />
 
@@ -618,7 +618,7 @@ function TrayWithLidLayout({ L, W, H, blueprint }) {
         </pattern>
         <DimMarkers id={dimId} color={dimC} />
       </defs>
-      <image href="/msp-logo.png" x={vbW*0.25} y={vbH*0.25} width={vbW*0.5} height={vbH*0.5}
+      <image href={`${import.meta.env.BASE_URL}msp-logo.png`} x={vbW*0.25} y={vbH*0.25} width={vbW*0.5} height={vbH*0.5}
         opacity="0.09" preserveAspectRatio="xMidYMid meet" />
       <rect width="100%" height="100%" fill="url(#grid-twl)" />
 
@@ -803,7 +803,7 @@ function HingedFolderLayout({ L, W, H, blueprint }) {
         </pattern>
         <DimMarkers id={dimId} color={dimC} />
       </defs>
-      <image href="/msp-logo.png" x={vbW*0.25} y={vbH*0.25} width={vbW*0.5} height={vbH*0.5}
+      <image href={`${import.meta.env.BASE_URL}msp-logo.png`} x={vbW*0.25} y={vbH*0.25} width={vbW*0.5} height={vbH*0.5}
         opacity="0.09" preserveAspectRatio="xMidYMid meet" />
       <rect width="100%" height="100%" fill="url(#grid-hfl)" />
 

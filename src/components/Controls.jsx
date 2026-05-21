@@ -91,7 +91,7 @@ function ModelPicker({ fefcoCode, setFefcoCode }) {
                       flexShrink: 0,
                     }}>
                       <img
-                        src={`/fefco/${code}.png`}
+                        src={`${import.meta.env.BASE_URL}fefco/${code}.png`}
                         alt={code}
                         style={{
                           width: '100%', height: '100%',
@@ -204,7 +204,7 @@ export default function Controls({
               marginBottom: '0.75rem',
             }}>
               <img
-                src={`/fefco/${fefcoCode}.png`}
+                src={`${import.meta.env.BASE_URL}fefco/${fefcoCode}.png`}
                 alt={fefcoCode}
                 style={{ width: 36, height: 36, objectFit: 'contain', borderRadius: '0.25rem', background: '#fff' }}
                 onError={e => { e.target.style.display = 'none'; }}

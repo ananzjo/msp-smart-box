@@ -79,7 +79,7 @@ export default function Configurator() {
         </aside>
 
         <main className="visualizer-panel" style={{ position: 'relative' }}>
-          <img src="/msp-logo.png" alt="MSP Logo" style={{
+          <img src={`${import.meta.env.BASE_URL}msp-logo.png`} alt="MSP Logo" style={{
             position: 'absolute', bottom: '1.5rem', right: '1.5rem', 
             width: '150px', opacity: 0.25, pointerEvents: 'none', zIndex: 10, filter: 'grayscale(100%)'
           }} />

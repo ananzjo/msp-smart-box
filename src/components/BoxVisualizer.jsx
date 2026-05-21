@@ -20,7 +20,7 @@ function AnimatedGroup({ targetRotation, position, children }) {
 
 /** MSP logo decal projected onto a vertical face (+Z normal by default) */
 function LogoDecal({ width, height, isBack }) {
-  const texture = useTexture('/msp-logo.png');
+  const texture = useTexture(`${import.meta.env.BASE_URL}msp-logo.png`);
   const aspect  = texture.image ? texture.image.width / texture.image.height : 1;
   let dW = width * 0.5, dH = dW / aspect;
   if (dH > height * 0.5) { dH = height * 0.5; dW = dH * aspect; }
@@ -36,7 +36,7 @@ function LogoDecal({ width, height, isBack }) {
 
 /** MSP logo decal projected onto a horizontal face (+Y normal) */
 function LogoDecalTop({ width, depth }) {
-  const texture = useTexture('/msp-logo.png');
+  const texture = useTexture(`${import.meta.env.BASE_URL}msp-logo.png`);
   const aspect  = texture.image ? texture.image.width / texture.image.height : 1;
   let dW = width * 0.45, dH = dW / aspect;
   if (dH > depth * 0.45) { dH = depth * 0.45; dW = dH * aspect; }
